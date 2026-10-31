@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-ivory text-char font-sans font-light antialiased; }
+  h1, h2, h3 { @apply font-serif font-medium; }
+}
+@layer components {
+  .container-x { @apply w-full max-w-7xl mx-auto px-5 md:px-10; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-normal tracking-wide transition duration-300; }
+  .btn-terra { @apply btn bg-terra-500 text-white hover:bg-terra-600; }
+  .btn-dark { @apply btn bg-char text-ivory hover:bg-terra-500; }
+  .btn-outline { @apply btn border border-char/30 hover:border-char hover:bg-char hover:text-ivory; }
+  .input { @apply w-full border-b border-char/20 bg-transparent px-1 py-3 outline-none transition placeholder:text-char/40 focus:border-terra-500; }
+  .eyebrow { @apply mb-4 text-xs font-medium uppercase tracking-[0.35em] text-terra-500; }
+}
